@@ -1,0 +1,101 @@
+li{
+    display: inline;
+    margin-left: 130px;
+    margin-top: 25px;
+    margin: 5px;
+    /* padding: 15px; */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.encabezado{
+    background-color: blueviolet;
+    padding-bottom: 65px;
+}
+.imagen-cabecera{
+    border-radius: 50%;
+}
+.contenedor{
+    margin-left: 715px;
+    margin-top: -85px;
+}
+.imagen-productos{
+    margin-left: 500px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+#unico{
+
+}
+.Post-Venta{
+   float: left;
+}
+.botton{
+    background-color:rgb(238, 13, 174);
+    font-size: 25px;
+    border-radius: 5px;
+    width: 145px;
+    position: relative;
+    right: -150px;
+    text-align: center;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.primertitulo{
+    color: deeppink;
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.segundotitulo{
+    color: deeppink;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.caja{
+    border: 5px solid rgb(234, 36, 171);
+}
+.card{
+    width: 40%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: slateblue;
+    color: #fff;
+    padding: 50px 30px;
+    text-align: justify;
+    display: inline-block;
+    border: 20px solid purple;
+      
+}
+.img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    /* centrado automatico */
+}
+.title{
+    word-spacing: 10px;
+    /* letter-spacing:15px */
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    /* text-align: start.para el comienzo. end para el final */
+}
+.paragraph{
+    text-transform: uppercase;
+    color: black;
+    /* coloca el texto en mayuscula */
+    /* text-transform: lowercase;... lo hace minuscula */
+}
+.paragraph--first{
+    text-transform: capitalize;
+    /* letra capital */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+body{
+    background-color: rgb(242, 180, 215);
+}
