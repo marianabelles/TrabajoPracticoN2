@@ -1,0 +1,27 @@
+li{
+    background-color: rgb(197, 36, 125);
+    font-size: 15px;
+}
+.encabezado{
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+}
+.subtitulo{
+    color:purple;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.subtitulo2{
+    color: blueviolet;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.table,th,td {
+    border: solid;
+
+}

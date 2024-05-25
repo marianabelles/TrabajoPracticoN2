@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico N°2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="encabezado">Trabajo Practico N°2</h1>
+    <br></br>
+    <h2 class="subtitulo">1- Defina y ejemplifique los distintos tipos de medida que se usan en Css3
+    </h2>
+    <h3 class="subtitulo">Unidades de Medidas</h3>
+<h4 class="subtitulo2">Unidades absolutas </h3>
+    <h4>Se llaman absolutas porque su valor es el declarado. No hay cálculo del mismo. Es el que es y de ahí no se mueve
+    </h4>
+    <li>Pixel
+        <br></br>
+        Px: Los píxeles son unidades de tamaño fijo. Un pixel es igual a un punto en la pantalla del ordenador (la división más pequeña de la resolución de su pantalla) y por lo tanto, es indivisible. 
+        <br></br>
+        Ejemplo: 
+        CSS
+        font-size: 16px;</li>
+        <br></br>
+    <li> Puntos
+        <br></br>
+        Pt: El punto es una herencia de los medios impresos. Un punto es igual a 1/72 de pulgada (según diversas fuentes), aprox. 0 ́04mm.
+        <br></br>
+        Ejemplo: 
+        CSS
+        font-size: 12pt;</li>
+        <br></br>
+    <li>Otras unidades absolutas:
+        <br></br>
+        mm, cm, in: Milímetros, centímetros, o pulgadas.
+         pc: picas (12 puntos.)
+         <br></br>
+        </li>
+    <h4 class="subtitulo2">Unidades relativas</h4> 
+    <h4>El valor final resultante (computado) está en función de un valor previo.</h4>
+    <br></br>
+    <li>Em
+        <br></br>
+        Es básicamente el tamaño de una letra «M» (bien podría ser cualquier otra letra) del elemento al cual se esté aplicando esta medida. Es decir, si en elemento tiene aplicado un tamaño de fuente de 16 pixeles, entonces 1 em será igual a 16px (los navegadores de manera predeterminada definen un font-size de 16px al elemento HTML, por lo tanto, por defecto 1em es igual a 16px).
+        La unidad em es escalable y siempre depende de su elemento padre. Por ejemplo, si el elemento body tiene un tamaño de fuente de 16px y un elemento hijo tiene una fuente con tamaño 1.3em, este texto se mostrará de un tamaño un 30% más grande que el del body (20.8px), mientras que si dentro de ese elemento tenemos otro hijo con un font-size de 1.3 em, el tamaño de fuente de este objeto sería un 30% más grande que el tamaño de su padre (27.04px).
+        <br></br>
+        Body = 1em (16px)
+        <br></br>
+        Hijo = 1.3em (16px x 1.3 = 20.8px)
+        <br></br>
+        Nieto = 1.3em (20.8px x 1.3 = 27.04px)</li>
+        <br></br>
+    <li> Porcentaje % 
+        <br></br>
+        La unidad de medida porcentual es la que se usa por defecto en los elementos HTML en donde de manera predeterminada cada elemento de bloque usa un ancho del 100%, es por eso que cuando achicamos la ventana del navegador con una página que no tenga estilos, la página se adapta, ya que siempre usará el ancho total visible.
+        <br></br>
+        CSS
+        .container {
+              margin: 0 auto;
+              width: 90%;
+              max-width: 1200px;
+        }</li>
+        <br></br>
+    <li>Rem:
+        La unidad de medida rem es muy similar a em, con la única diferencia de que no es escalable, esto quiere decir que no depende del elemento padre, sino del elemento raíz del documento, el elemento HTML. Rem significa «Root Em«, o sea, es un em basado en la raíz.
+        Esto significa que si el elemento HTML tiene un tamaño de fuente de 16px (como es por defecto), entonces 1rem, sería igual a 16px, y si queremos aplicar un tamaño basado en rem a cualquier elemento de la página, no importará cual sea el tamaño de fuente que tenga asociado ese elemento, ya que 1 rem siempre será igual a 16 pixeles a no ser que se modifique el elemento raíz. 
+        <br></br>
+        Ejemplo: 
+        <br></br>
+        CSS
+        .container {
+                 margin: 0 auto;
+                 width: 90%;
+                 max-width: 75rem;
+        }</li>
+        <br></br>
+    <li>ex, ch: Son respectivamente la altura de la x minúscula, y el ancho del número 0. Aunque no son tan soportadas por los navegadores como los rems.</li>
+    <br></br>
+    <li>vw, vh: Estas son respectivamente 1/100 del ancho de la ventana, y 1/100 de la altura de la  ventana. Tampoco son tan soportadas como los rems.</li>
+    <br></br>
+</h4>
+    <br></br>
+    <h2>..............................................................................................................................................................................................................................................................................................................................................................................................</h2>
+    <h2 class="subtitulo">2-Defina cada parte y que representa, de lo que ve a continuacion</h2>
+    <h3>
+       <div>
+        <img src="imagenes/tp2.png" alt="">
+       </div>
+    </h3>
+    <br></br>
+    <h2>..............................................................................................................................................................................................................................................................................................................................................................................................</h2>
+    <h2 class="subtitulo">3-Cual es la diferencia en el valor de la propiedad display si uso inline o inline-block?</h2>
+    <h3> El valor inline para la propiedad display hace que un elemento se comporte como una linea de texto, lo que significa que no respeta el ancho y alto definidos. Mientras que inline-block, permite controlar el tamaño y la alineación vertical del elemento. </h3>
+    <br></br>
+    <h2>..............................................................................................................................................................................................................................................................................................................................................................................................</h2>
+    <h2 class="subtitulo"> 4-Indique las 4 alertanivas de uso tanto para padding y para margin e indique como funcionan</h2>
+    <h3 class="subtitulo">Margin</h3>
+    <table class=".table,th,td">
+        <tr>
+            <th>Propiedad</th>
+            <th>Valor</th>
+            <th>Significado</th> 
+        </tr>
+        <tr>
+            <td>margin-top</td>
+            <td>auto</td>
+            <td>Establece un tamaño de margen superior</td>
+        </tr>
+        <tr>
+            <td>margin-left</td>
+            <td>auto</td>
+            <td>Establece un tamaño de margen a la izquierda</td>
+        </tr>
+        <tr>
+            <td>margin-right</td>
+            <td>auto</td>
+            <td>Establece un tamaño de margen a la derecha</td>
+        </tr>
+        <tr>
+            <td>margin-botton</td>
+            <td>auto</td>
+            <td>Establece un tamaño de margen inferior</td>
+        </tr>
+    </table>
+    <br></br>
+    <h3 class="subtitulo">Padding</h3>
+    <table class=".table,th,td">
+            <tr>
+                <th>Propiedad</th>
+                <th>Valor</th>
+                <th>Significado</th>
+            </tr>
+            <tr>
+                <td>padding-top</td>
+                <td>auto</td>
+                <td>Aplica un relleno interior en el espacio superior de un elemento</td>
+            </tr>
+            <tr>
+                <td>padding-left</td>
+                <td>auto</td>
+                <td>Aplica un relleno interior en el espacio izquierdo de un elemento</td>
+            </tr>
+            <tr>
+                <td>padding-right</td>
+                <td>auto</td>
+                <td>Aplica un relleno interior en el espacio derecho de un elemento</td>
+            </tr>
+            <tr>
+                <td>padding-botton</td>
+                <td>auto</td>
+                <td>Aplica un relleno interior en el espacio ingerior de un elemento</td>
+             </tr>
+    </table>
+    <br></br>
+    <h2>..............................................................................................................................................................................................................................................................................................................................................................................................</h2>
+    <h2 class="subtitulo">5-Defina e indique los distintos tipos de selectores que se usan en css3</h2>
+    <h3 class="subtitulo">Selectores</h3>
+    <table class=".table,th,td">
+        <tr>
+            <th>Nombre</th>
+            <th>Ejemplo</th>
+            <th>Significado</th>
+        </tr>
+        <tr>
+            <td>Selectores de tipo</td>
+            <td>`p {...}`</td>
+            <td>Seleccionan todos los parrafos `p`.</td>
+        </tr>
+        <tr>
+         <td>Selectores de clase</td>
+         <td>`.clase{...}`</td>
+         <td>Seleccionan elementos basados en el valor del atributo `.class="clase"`.</td>
+        </tr>
+        <tr>
+            <td>Selectores de ID</td>
+            <td>`#identificador{...}`</td>
+            <td>Seleccionan elementos basados en el valor del atributo `id`.</td>
+        </tr>
+        <tr>
+            <td>Selector universal</td>
+            <td>*{...}</td>
+            <td>Seleccionan todos los elementos en un documento HTML.</td>
+        </tr>
+    </table>
+    <br></br>
+    <h2>..............................................................................................................................................................................................................................................................................................................................................................................................</h2>
+    <h2 class="subtitulo">6-Que significa que Html5 trabaje con archivos externos?</h2>
+    <h3>Cuando se dice que HTML5 trabaja con archivos externos, significa que HTML5 permite vincular archivos externos, como archivos de CSS para estilos o archivos JavaScript. 
+        Facilitando la actualización y una mejor organización del código.
+    </h3>
+    <br></br>
+    <h2>..............................................................................................................................................................................................................................................................................................................................................................................................</h2>
+    <h2 class="subtitulo"> 7-Que es una ruta absoluta y una relativa?</h2>
+    <h3>Ruta absoluta:
+        <br></br>
+        Es una dirección completa que especifica la ubicación de un archivo o directorio desde la raíz del sistema de archivos. Por ejemplo, en sistemas Unix-like, una ruta absoluta podria ser  "/home/usuario/archivo.txt". 
+        <br></br>
+        Ruta relativa: 
+        <br></br>
+        Es una dirección que se especifica en relación con el directorio actual. Por ejemplo, si estas en el directorio "/home/usuario/" y quieres referenciar el archivo "archivo.txt" que está en el mismo directorio, puedes usar la ruta relativa "./archivo.txt"
+        <br></br>
+        Las rutas relativas son mas flexibles y portátiles, ya que permiten mover o copiar archivos y directorios sin tener que cambiar todas las referencias de rutas, mientras que las rutas absolutas son fijas y dependen de la estructura del sistema de archivos.
+    </h3>
+   
+    <br></br>
+    <h2>............................................................................................................................................................................................................................................................................................................................................................................................. </h2>
+    <h2 class="subtitulo"> 8-Defina y ejemplifique los distintos tipos de valores que puede tomar la propiedad color</h2>
+    <h3>La propiedad color en CSS se utiliza para definir el color del texto dentro de un elemento HTML. Puede tomar diferentes tipos de valores:
+        <br></br>
+        <li>Nombres de color: Puede utilizar nombres predefinidos para los colores, como red, blue, green, entre otros. Por ejemplo: 
+            <br></br>
+            color:red;
+        </li>
+        <br></br>
+        <li> Valores Hexadecimales: Representan colores mediante una combinación de números y letras. Por ejemplo:
+            <br></br>
+            <!-- trabaja con numeros y letras. 
+            color:#abc123-->
+            color: #FFA500;
+        </li>
+        <br></br>
+        <li>Valores RGB: Representan colores mediante la combinación de valores de rojo, verde y azul. Pueden ser valores absolutos (0a255) o porcentajes (0% a 100%). Por ejemplo:
+            <br></br>
+            color: rgb(255,0,0,0.5);
+            color: rgb(50%,75%,25%);
+        </li>
+        <br></br>
+
+        <li>Valores RGBA: Similar a RGB, pero con un componente adicional para la opacidad (alfa). La opacidad se especifica como un valor entre 0 (totalmente transparente)y 1 (totalmente opaco). Por ejemplo:
+            <br></br>
+            color: rgba(255,0,0,0.5)
+        </li>
+        <!-- <li>Valores HSL y HSLA: Representan colores mediante tono, saturación y luminosidad. HSLA tambien incluye un componente alfa para la opacidad. Por ejemplo: -->
+            <!-- <br></br> -->
+            <!-- color:hsl(120,100%50%); -->
+            <!-- color:hsla(240,100%,50%,0.5); -->
+        <!-- </li>    -->
+    </h3>
+    
+    <br></br>
+    <h2>............................................................................................................................................................................................................................................................................................................................................................................................. </h2>
+    <h2 class="subtitulo">9-Que es el modelo de caja,y en que se diferencian paddding de margin</h2>
+    <h3> Modelo de cajas: Es un concepto en CSS que se describe cómo se representa los elementos HTML en una página web. Incluye el contenido del elemento, el padding (relleno), el borde y el margin (margen).
+    <br></br>
+    El padding es el espacio entre el contenido del elemento y su borde, mientras que el margin es el espacio entre el borde del elemento y otros elementos adyacentes.(El padding afecta el interior del elemento y el margin afecta al espacio exterior del elemento).
+    </h3>
+    <br></br>
+</body>
+</html>
